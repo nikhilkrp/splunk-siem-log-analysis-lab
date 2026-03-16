@@ -1,0 +1,1 @@
+hydra -l kali -P pass.txt ssh://TARGET_IP

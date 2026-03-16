@@ -1,0 +1,4 @@
+index=main "authentication failure"
+| rex "rhost=(?<src_ip>\d+\.\d+\.\d+\.\d+)"
+| iplocation src_ip
+| stats count by Country lat lon

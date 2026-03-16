@@ -41,6 +41,7 @@ index=main "authentication failure"
 
 The system blocks malicious IPs using iptables.
 iptables -A INPUT -s <attacker_ip> -j DROP
+Run this Script to Block IP sudo /opt/splunk/bin/block_ip.sh <IP>
 
 
 ## Dashboard Panels

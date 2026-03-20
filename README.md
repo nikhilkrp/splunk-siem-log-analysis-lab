@@ -13,7 +13,11 @@ This project demonstrates a SIEM-based log monitoring and incident response syst
 
 ## Architecture
 
-Linux Logs → Splunk Monitor → Splunk Index → SPL Queries → Dashboard → Alert → Remediation
+Linux Logs → Universal Forwarder → Splunk Enterprise → Indexer → SPL Queries → Dashboard → Alerts → Remediation
+
+## Log Collection
+
+Logs are forwarded using Splunk Universal Forwarder instead of manual log extraction.
 
 ## Attack Simulation
 
@@ -54,6 +58,11 @@ Run this Script to Block IP sudo /opt/splunk/bin/block_ip.sh <IP>
 ## Technologies Used
 
 - Splunk Enterprise
+- Splunk Universal Forwarder
 - Linux
 - Hydra
-- Bash scripting
+- Bash
+
+## Screenshots
+
+See `/screenshots` folder

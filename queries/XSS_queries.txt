@@ -1,0 +1,11 @@
+👉 Payload:
+
+<script>alert('XSS')</script>
+<script>(document.cookie)</script>
+
+👉 Detection:
+
+index=main "/xss_s/"
+index=main "/xss_s/"
+| rex field=_raw "^(?<ip>\d+\.\d+\.\d+\.\d+)"
+| stats count by ip
